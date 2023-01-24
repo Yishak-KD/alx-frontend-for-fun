@@ -365,6 +365,9 @@ a:active {
 
 /* Grid
       ============================= */
+.row {
+    display: flex;
+}
 
 ul.row {
     margin: 0;
@@ -372,14 +375,7 @@ ul.row {
     list-style: none;
 }
 
-.row::after {
-    content: '';
-    display: table;
-    clear: both;
-}
-
 [class*='col-'] {
-    float: left;
     padding: 0.5rem;
 }
 
