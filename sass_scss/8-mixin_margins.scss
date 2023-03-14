@@ -1,15 +1,14 @@
 // Margin mixin
 
-@mixin margins {
-    margin-left: 10px;
-    margin-right: 10px;
+@mixin my-margin($value) {
+    margin-left: $value;
+    margin-right: $value;
 }
 
 body {
-    @include margins;
+    @include my-margin(10px);
 }
 
 div {
-    margin-left: 15px;
-    margin-right: 15px;
+    @include my-margin(15px);
 }
